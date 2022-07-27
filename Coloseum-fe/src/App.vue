@@ -14,8 +14,8 @@
 <script>
 import battleField from './pages/battleField.vue';
 import userPage from './pages/playerPage.vue';
-import vHeader from './components/header/header';
-import signInPage from './pages/signInPage';
+import vHeader from "./components/header/header";
+import signInPage from "./pages/signInPage";
 
 export default {
   data() {

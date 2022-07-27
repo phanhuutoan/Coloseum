@@ -18,4 +18,5 @@ module.exports = {
     'no-restricted-syntax': [0],
     'no-useless-return': [0],
   },
+  "plugins": ["only-warn"]
 };
