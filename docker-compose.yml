@@ -1,0 +1,19 @@
+version: '3'
+services: 
+  fe:
+    environment:
+      CHOKIDAR_USEPOLLING: 'true'
+    build: 
+      context: ./Coloseum-fe
+      dockerfile: Dockerfile
+    ports: 
+      - 1000:8080
+  be-app:
+    build: 
+      context: ./coloseum-be
+      dockerfile: Dockerfile
+
+    ports: 
+      - 1205:1205
+
+    
