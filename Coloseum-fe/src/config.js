@@ -1,3 +1,3 @@
 export default {
-  host: 'localhost:1205',
+  host: '34.148.184.78:1205',
 };

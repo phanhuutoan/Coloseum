@@ -38,11 +38,11 @@ export default {
 
   computed: {
     avatarTop() {
-      return imgChoose.avaChoose(this.topInNormal.img);
+      return this.topInNormal.img;
     },
 
     avatarBottom() {
-      return imgChoose.avaChoose(this.bottomInNormal.img);
+      return this.bottomInNormal.img;
     },
 
     helperPowerName() {

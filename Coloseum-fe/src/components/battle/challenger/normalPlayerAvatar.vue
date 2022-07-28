@@ -39,11 +39,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 .avatar {
-  margin-right: 2rem;
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 1rem;
   position: relative;
   h6 {
     color: rgb(255, 255, 255);

@@ -22,7 +22,7 @@ export default {
 
   .section-2{
     display: flex;
-    margin-top: 4.3rem;
+    margin-top: 2rem;
     justify-content: flex-end;
   }
 </style>

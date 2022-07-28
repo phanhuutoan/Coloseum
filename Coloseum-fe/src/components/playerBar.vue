@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="bar">
+  <div class="bar">
+    <div class="bar-normal">
       <normal-player-avatar
         v-for="player in normalPlayers"
         :key="player.username"
@@ -9,9 +9,11 @@
         :score="player.score"
         @changeChallenger="onChangeChallenger($event)"
       />
-      <challenge-player-avatar></challenge-player-avatar>
-      <audio :src="changeChallengerAudio" type="audio/mpeg" ref="changeChallenger"></audio>
     </div>
+    <div class="bar-main">
+      <challenge-player-avatar></challenge-player-avatar>
+    </div>
+      <audio :src="changeChallengerAudio" type="audio/mpeg" ref="changeChallenger"></audio>
   </div>
 </template>
 <script>
@@ -45,11 +47,29 @@ export default {
 </script>
 <style lang="scss" scoped>
 .bar {
-  background-color: rgb(175, 0, 52);
   display: flex;
-  border-radius: 40rem;
-  padding-left: 2.5rem;
-  margin-top: 3rem;
-  height: 10rem;
+
+  &-normal {
+    background-color: rgb(183, 54, 93);
+    min-height: 22rem;
+    width: 100%;
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 9.5rem;
+    border-top-left-radius: 1.2rem;
+    border-bottom-left-radius: 1.2rem;
+    flex: 2;
+  }
+
+  &-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(137, 67, 158);
+    border-top-right-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    flex: 1
+  }
 }
 </style>

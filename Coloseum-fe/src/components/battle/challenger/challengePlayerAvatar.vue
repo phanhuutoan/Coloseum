@@ -40,10 +40,11 @@ export default {
 .challenger {
   display: flex;
   align-items: center;
+  flex-direction: column;
 
   &__info {
     position: relative;
-    margin-left: 1.5rem;
+    margin-top: 1rem;
     text-align: center;
     cursor: pointer;
   }
@@ -54,7 +55,7 @@ export default {
     border-radius: 0.5rem;
     font-weight: 500;
     transition: all 0.2s;
-    font-size: 2.5rem;
+    font-size: 2rem;
 
     &:hover {
       transform: scale(1.1);
@@ -65,11 +66,10 @@ export default {
     margin-bottom: 0;
   }
   img {
-    width: 14rem;
-    height: 14rem;
+    width: 12rem;
+    height: 12rem;
     object-fit: cover;
     border-radius: 50%;
-    margin-left: 1.2rem;
     border: 0.6rem solid rgb(240, 208, 149);
   }
 }
